@@ -1,16 +1,20 @@
 package br.com.meuprimeirorest.dto;
 
+import jakarta.annotation.Nonnull;
+import org.jspecify.annotations.NonNull;
+
 public class Cliente {
 
+    @Nonnull
     private String nome;
     private String sobrenome;
     private Integer idade;
 
-    public String getNome() {
+    public @NonNull String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(@NonNull String nome) {
         this.nome = nome;
     }
 
